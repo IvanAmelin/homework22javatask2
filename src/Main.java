@@ -3,15 +3,15 @@ import java.nio.file.FileSystemNotFoundException;
 public class Main {
     public static void main(String[] args) {
 
-        int clientaccount= 100;
-        int replenishment = 999;
-        int replenishmentplusbonus = replenishment + replenishment/100;
+        int clientAccount= 100;
+        int replenishment = 1000;
         if (replenishment < 1000) {
-            clientaccount = clientaccount + replenishment;
-            System.out.println("Баланс после зачисления: "+clientaccount);
+            clientAccount = clientAccount + replenishment;
+            System.out.println("Баланс после зачисления: "+clientAccount);
         } else {
-            clientaccount = clientaccount + replenishmentplusbonus;
-            System.out.println("Баланс после зачисления: "+clientaccount);
+            int replenishmentPlusBonus = replenishment + replenishment/100;
+            clientAccount = clientAccount + replenishmentPlusBonus;
+            System.out.println("Баланс после зачисления: "+clientAccount);
         }
 
         // стоимости билета, другую для хранения количества
