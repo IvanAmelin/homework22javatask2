@@ -7,12 +7,11 @@ public class Main {
         int replenishment = 1000;
         if (replenishment < 1000) {
             clientAccount = clientAccount + replenishment;
-            System.out.println("Баланс после зачисления: "+clientAccount);
         } else {
             int replenishmentPlusBonus = replenishment + replenishment/100;
             clientAccount = clientAccount + replenishmentPlusBonus;
-            System.out.println("Баланс после зачисления: "+clientAccount);
         }
+        System.out.println("Баланс после зачисления: "+clientAccount);
 
         // стоимости билета, другую для хранения количества
         // рублей для одной бонусной милли
