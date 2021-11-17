@@ -5,12 +5,13 @@ public class Main {
 
         int clientAccount= 100;
         int replenishment = 1000;
-        int replenishmentPlusBonus = replenishment + replenishment/100;
+        int bonus;
         if (replenishment < 1000) {
-            clientAccount = clientAccount + replenishment;
+            bonus = 0;
         } else {
-            clientAccount = clientAccount + replenishmentPlusBonus;
+            bonus = replenishment/100;
         }
+        clientAccount = clientAccount + replenishment + bonus;
         System.out.println("Баланс после зачисления: "+clientAccount);
 
         // стоимости билета, другую для хранения количества
