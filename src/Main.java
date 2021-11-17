@@ -5,10 +5,10 @@ public class Main {
 
         int clientAccount= 100;
         int replenishment = 1000;
+        int replenishmentPlusBonus = replenishment + replenishment/100;
         if (replenishment < 1000) {
             clientAccount = clientAccount + replenishment;
         } else {
-            int replenishmentPlusBonus = replenishment + replenishment/100;
             clientAccount = clientAccount + replenishmentPlusBonus;
         }
         System.out.println("Баланс после зачисления: "+clientAccount);
